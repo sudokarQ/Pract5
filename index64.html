@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mySmart = new Object();
+        mySmart.model = "Iphone 13 Pro Max";
+        mySmart.year = "2021";
+        mySmart.price = "$1890";
+        mySmart.memory = "1TB";
+        mySmart.display = "6.7";
+        mySmart.protect = "IP68";
+        mySmart.show = function () {
+            for (let i in mySmart) {
+                if (typeof (mySmart[i]) == 'function') {
+                } else
+                    document.write(`${i}: ${mySmart[i]}; ` + "</br>")
+            }
+        }
+
+        alert(mySmart["model"]);
+        alert(mySmart.year);
+        alert(mySmart.price);
+        alert(mySmart.memory);
+        alert(mySmart.display);
+        alert(mySmart.protect);
+        mySmart.show();
+
+    </script>
+</body>
+
+</html>

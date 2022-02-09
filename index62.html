@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const mult = (x, y) => x * y;
+        const x = Number(prompt("Введите число y", 4));
+        const y = Number(prompt("Введите число y", 5));
+        const string = `The multiplying of ${x} and ${y} is ${mult(x, y)}.`
+        if (isNaN(x) || isNaN(y)) {
+            console.log("Проверьте правильность ввода данных!")
+        }
+        else console.log(string);
+    </script>
+</body>
+
+</html>
